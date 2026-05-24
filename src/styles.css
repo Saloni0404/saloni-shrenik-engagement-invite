@@ -324,7 +324,7 @@ html{
 .final-line{
   font-family: 'Great Vibes', cursive;
   font-size: clamp(2.3rem, 4.8vw, 4rem);
-  font-weight: 550;
+  font-weight: 580;
   line-height: 1.25;
   letter-spacing: .01em;
   color: var(--maroon);
@@ -334,8 +334,8 @@ html{
 }
 final-giftline{
   font-family: 'Great Vibes', cursive;
-  font-size: clamp(2.1rem, 4.5vw, 4rem);
-  font-weight: 50;
+  font-size: clamp(2.3rem, 4.5vw, 4rem);
+  font-weight: 500;
   line-height: 1.25;
   letter-spacing: .01em;
   color: var(--maroon);
