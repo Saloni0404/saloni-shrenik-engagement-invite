@@ -31,7 +31,12 @@ html{
   margin: 0 auto;
 }
 
-.hero-card{text-align:center;margin:auto;padding:36px 20px}
+.hero-card{ position: relative;
+  text-align: center;
+  margin-top: 60vh;
+  transform: translateY(-50%);
+  padding: 36px 20px;
+  width: 100%;}
 .logo{width:min(330px,58vw);height:auto;filter:drop-shadow(0 12px 18px rgba(123,31,45,.12))}
 .static-logo{animation:none!important}h1,h2{font-family:'Cormorant Garamond',serif;font-weight:600;letter-spacing:.03em;margin:18px 0;color:var(--maroon)}h1{font-size:clamp(2.1rem,6vw,4.5rem)}h2{font-size:clamp(3rem,6.8vw,6.3rem)}
 .hero-card h1{max-width:900px;margin-left:auto;margin-right:auto}.subtitle,.gift-line,.airport,.final-line{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.2vw,1.8rem);line-height:1.35}.scroll-note{display:inline-block;margin-top:34px;color:var(--maroon);font-family:'Cormorant Garamond';font-size:1.35rem;opacity:.8;animation:pulse 2.4s ease-in-out infinite}.divider{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold);margin:14px auto}.divider span{width:120px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
