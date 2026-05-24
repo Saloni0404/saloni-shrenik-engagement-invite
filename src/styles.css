@@ -53,15 +53,12 @@ div{
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-
   display:flex;
   align-items:center;
   justify-content:center;
-
   padding:
     clamp(24px,4vw,54px)
     clamp(16px,5vw,80px);
-
   position:relative;
   overflow:hidden;
 }
@@ -73,15 +70,22 @@ div{
   background:
     radial-gradient(
       circle at 50% 35%,
-      rgba(255,255,255,.30),
-      rgba(255,255,255,.0.8) 45%,
-      rgba(255,238,235,.0.8)
+      rgba(255,255,255,.12),
+      rgba(255,255,255,.0.04) 45%,
+      rgba(255,238,235,.0.04)
     );
-
   pointer-events:none;
 }
 .page2::after{
-
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(255,255,255,.12),
+      rgba(255,255,255,.04) 45%,
+      rgba(255,238,235,.02)
+    );
+}
+.page3::after{
   background:
     radial-gradient(
       circle at 50% 35%,
