@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Saloni Shrenik Invite//EN
+BEGIN:VEVENT
+UID:saloni-shrenik-engagement-20260613@example.com
+DTSTAMP:20260511T000000Z
+DTSTART:20260614T013000Z
+DTEND:20260614T053000Z
+SUMMARY:Saloni & Shrenik Engagement Ceremony
+LOCATION:Shubham Halls, 1208 Apollo Way Suite 500, Sunnyvale, CA 94085
+DESCRIPTION:Engagement ceremony of Saloni and Shrenik
+END:VEVENT
+END:VCALENDAR
