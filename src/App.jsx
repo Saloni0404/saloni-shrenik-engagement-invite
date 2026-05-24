@@ -238,7 +238,7 @@ const toggleMusic = () => {
           </a>
         )}
       </section>
-
+      <p className="final-line">{invite.giftLine}</p>
       <p className="final-line">{invite.closing}</p>
       
     </div>
