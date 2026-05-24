@@ -82,7 +82,7 @@ const toggleMusic = () => {
     <div className="hero-card fade-up">
       <h1 className="hero-title">
         Saloni & Shrenik's
-        <span> Engagement Ceremony</span>
+        <span>Engagement Ceremony</span>
       </h1>
       <div className="divider"><span></span>♥<span></span></div>
       <p className="subtitle">{invite.subtitle}</p>

@@ -325,16 +325,12 @@ html{
   }
 }
 @media (max-width: 768px){
-
   .hero-title{
     line-height: 1.12;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  .hero-title span{
-    margin-top: 8px;
   }
 }
 
