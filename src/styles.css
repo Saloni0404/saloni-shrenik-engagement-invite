@@ -87,29 +87,7 @@
     margin-top: 6px;
   }
   
-  {/*}.rsvp-form button {
-    margin-top: 10px;
-    padding: 14px;
-    border: none;
-    border-radius: 999px;
-    background: #F3E3E5;
-    color: #6D071A;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .rsvp-form button:hover {
-    background: #EBCFD3;
-    transform: scale(1.02);
-    transition: 0.2s ease;
-  }
-*/}
-  .couple-section {
-    text-align: center;
-    margin-top: 12px;
-  }
-  
+   
   .couple-names {
     font-size: 50px;
     font-weight: 600;
