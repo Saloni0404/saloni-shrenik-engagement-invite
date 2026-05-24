@@ -245,9 +245,11 @@ html{
       28px
       20px;
   }
-  .hero-title span{
-  display: block;
-  }
+.hero-title span{
+  display: block !important;
+  width: 100%;
+  margin-top: 10px;
+}
   h1{
     font-size: clamp(3.2rem, 10vw, 4.8rem);
     line-height: 1.08;
@@ -260,7 +262,7 @@ html{
   .subtitle{
   font-family:'Cormorant Garamond',serif;
   font-size: clamp(3rem, 8vw, 12rem);
-  line-height: 1.45;
+  line-height:2.0;
   font-weight: 500;
   letter-spacing: .02em;
   color: var(--maroon);
@@ -326,6 +328,10 @@ html{
 
   .hero-title{
     line-height: 1.12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .hero-title span{
     margin-top: 8px;
