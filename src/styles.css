@@ -310,18 +310,20 @@ h2{
   letter-spacing:1px;
   text-transform:uppercase;
   opacity:.8;
+  margin-top:4px;
   margin-bottom:4px;
 }
 
+/*.family-name{
+  font-size:20px;
+  font-weight:600;
+  line-height:1.5;
+}*/
 .family-name{
   font-size:20px;
   font-weight:600;
   line-height:1.5;
-}
-.family-name{
-  font-size:20px;
-  font-weight:600;
-  line-height:1.5;
+  margin-top:0;
 }
 
 .details-row{
