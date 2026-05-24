@@ -62,7 +62,6 @@ div{
   position:relative;
   overflow:hidden;
 }
-
 .page::after{
   content:"";
   position:absolute;
@@ -71,8 +70,8 @@ div{
     radial-gradient(
       circle at 50% 35%,
       rgba(255,255,255,.12),
-      rgba(255,255,255,.0.04) 45%,
-      rgba(255,238,235,.0.04)
+      rgba(255,255,255,.04) 45%,
+      rgba(255,238,235,.04)
     );
   pointer-events:none;
 }
@@ -95,11 +94,11 @@ div{
     );
 }
 .page2{
-  background-size: contain!important;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #f9dfe3;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
 }
+
 
 .hero-card,
 .invite-layout,
@@ -252,11 +251,10 @@ h2{
 
 .eyebrow{
   font-family:'Great Vibes',cursive;
-  margin: top 5px;vh;
+  margin: top 5px;
   font-size:clamp(2.0rem,5vw,3.6rem);
   line-height:1.7;
   font-weight:500;
-  margin:8px 0 0;
 
 }
 .eyebrow span{
