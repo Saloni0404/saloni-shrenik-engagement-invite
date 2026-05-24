@@ -106,17 +106,14 @@ const toggleMusic = () => {
   </Page>
   <Page n={2}>
     <div className="invite-layout">
-      <div className="invite-copy fade-up">
-        <p className="eyebrow">  
-          We would like to invite you to
-          <span>engagement ceremony of</span>
-        </p>
-        <div className="divider-page2">
-          <span></span>
-          ♥
-          <span></span>
-        </div>
-
+      <p className="eyebrow fade-up">  
+        <span>We would like to invite you to</span>
+        <span>engagement ceremony of</span>
+      </p>
+      <div className="divider-page2">
+        <span></span>♥<span></span>
+      </div>
+  <div className="invite-copy fade-up">
         <h2>{invite.names}</h2>
         <div className="couple-section"></div>
        <div className="couple-grid">
