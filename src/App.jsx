@@ -173,10 +173,10 @@ function App(){
           setForm({ ...form, accommodationGuests: e.target.value })
           }
         />
-        <button type="submit">
-           Submit RSVP ✨
-          </button>
-      </form>
+        <button type="submit" className="pill">
+          Submit RSVP 
+        </button>      
+</form>
     
       </section>
 
