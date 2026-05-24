@@ -276,6 +276,16 @@ h2{
   width:80%;
   margin-top:18px;
   align-items:start;
+  margin-bottom:0;
+}
+.couple-ampersand{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3rem,6vw,5rem);
+  font-weight:500;
+  color:var(--gold);
+  line-height:1;
+  align-self:center;
+  margin:8px 0;
 }
 
 .divider-page2{
