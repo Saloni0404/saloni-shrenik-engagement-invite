@@ -92,30 +92,35 @@ const toggleMusic = () => {
   <Page n={2}>
     <div className="invite-layout">
       <div className="invite-copy fade-up">
-        <p className="eyebrow">{invite.intro}</p>
+        <p className="eyebrow">  
+            <span>We would like to invite you</span>
+            <span>to the engagement ceremony of</span>
+            </p>
         <div className="divider"><span></span>♥<span></span></div>
         <h2>{invite.names}</h2>
+
         <div className="couple-section">
-       <h2 className="couple-names">
-        Saloni   &   Shrenik
-        </h2>
 
-        <div className="family-row">
-          <div className="family-block">
-            <p className="family-label">Daughter of</p>
-            <p className="family-name">
-              Jayshree & Rajendra Burad
-            </p>
-          </div>
-
-          <div className="family-block">
-            <p className="family-label">Son of</p>
-            <p className="family-name">
-              Shailaja & Sanjay Changede
-            </p>
-          </div>
+      <div className="couple-grid">
+        <div className="person-block">
+        <h2 className="couple-name">Saloni</h2>
+        <p className="family-label">
+          Daughter of
+         </p>
+        <p className="family-name">
+          Jayshree & Rajendra Burad
+        </p>
         </div>
+      <div className="person-block">
+        <h2 className="couple-name">Shrenik</h2>
+        <p className="family-label">
+          Son of
+        </p>
+        <p className="family-name">
+          Shailaja & Sanjay Changede
+        </p>
       </div>
+    </div>
         <div className="details-row">
           <Detail icon={<CalendarDays/>} label={invite.dateLabel} href={invite.calendarLink}/>
           <Detail icon={<Clock/>} label={invite.timeLabel} href={invite.calendarLink}/>

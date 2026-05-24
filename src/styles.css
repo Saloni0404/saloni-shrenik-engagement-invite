@@ -95,9 +95,9 @@ div{
     );
 }
 .page2{
-  background-size: contain !important;
+  background-size: contain!important;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   background-color: #f9dfe3;
 }
 
@@ -250,32 +250,56 @@ h2{
 
 .eyebrow{
   font-family:'Great Vibes',cursive;
+  margin-top:30vh;
   font-size:
     clamp(2.1rem,4.5vw,3.8rem);
   margin:8px 0 0;
 }
+.eyebrow span{
+  display:block;
+  line-height:1.2;
+}
 
-.couple-names{
+
+.family-label{
+  font-size:18px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  opacity:.8;
+  margin-bottom:4px;
+}
+.couple-grid{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:60px;
+
+  width:100%;
+
+  margin-top:18px;
+
+  align-items:start;
+}
+
+.person-block{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  text-align:center;
+}
+
+.couple-name{
   font-size:60px;
   font-weight:600;
+  line-height:1.15;
   margin-bottom:10px;
   color:#6D071A;
-  line-height:2.0;
-}
-
-.family-row{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  gap:60px;
-  margin-top:6px;
-  width:100%;
-}
-
-.family-block{
-  flex:1;
-  text-align:center;
-  min-width:300px;
 }
 
 .family-label{
@@ -286,6 +310,11 @@ h2{
   margin-bottom:4px;
 }
 
+.family-name{
+  font-size:20px;
+  font-weight:600;
+  line-height:1.5;
+}
 .family-name{
   font-size:20px;
   font-weight:600;
@@ -333,11 +362,6 @@ h2{
   transform:translateY(-2px);
 }
 
-/*.couple-wrap{
-  position:relative;
-  text-align:center;
-}
-*/
 .couple{
   width:min(320px,82vw);
   max-height:40svh;
