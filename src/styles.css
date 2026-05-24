@@ -259,7 +259,7 @@ html{
   }
   .subtitle{
   font-family:'Cormorant Garamond',serif;
-  font-size: clamp(10.5rem, 3vw, 2.6rem);
+  font-size: clamp(3rem, 8vw, 12rem);
   line-height: 1.45;
   font-weight: 500;
   letter-spacing: .02em;
