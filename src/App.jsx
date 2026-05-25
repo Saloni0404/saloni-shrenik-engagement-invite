@@ -9,7 +9,21 @@ function Detail({icon, label, href}){
     {icon}<span>{label}</span>
   </a>
 }
-function Page({n, children}){ return <section className={`page page${n}`} style={{backgroundImage:`url(${invite.images.backgrounds[n-1]})`}}>{children}</section> }
+function Page({ n, children }) {
+
+  return (
+    <section
+      className={`page page${n}`}
+      style={{
+        backgroundImage:
+          `url(${invite.images.backgrounds[n - 1]})`
+      }}
+    >
+      <div className="page-frame"></div>
+      {children}
+    </section>
+  );
+}
 function App(){
   const [form, setForm] = useState({
     name: '',
