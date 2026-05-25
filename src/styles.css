@@ -330,35 +330,34 @@ h2{
 .details-row{
   position:absolute;
   left:4%;
-  top:50%;
+  top:56%;
   transform:none;
   display:flex;
   flex-direction:column;
   align-items:flex-start;
-  gap:4px;
-  width:38%;
+  gap:2px;
+  width:40%;
   z-index:5;
 }
 .detail{
   width:100%;
   text-decoration:none;
   color:var(--maroon);
-  padding:4px 2px;
+  padding:2px 0;
   display:flex;
   flex-direction:row;
-  align-items:center;
+  align-items:flex-start;
   justify-content:flex-start;
   gap:8px;
-  min-height:44px;
+  min-height:auto;
   background:transparent;
   transition:.25s;
 }
 .detail span{
+  font-size:0.7rem;
+  line-height:1.1;
   font-weight:700;
-  letter-spacing:.02em;
   color:#6D071A;
-  font-size:0.72rem;
-  line-height:1.05;
   white-space:nowrap;
 }
 .detail:first-child{
@@ -366,13 +365,12 @@ h2{
 }
 .detail svg,
 .section-icon{
-color:var(--gold);
-   width:20px;
-  height:20px;
-  stroke-width:2.6;
-  filter:
-    drop-shadow(
-      0 0 2px rgba(201,154,55,.28));
+  color:var(--gold);
+  width:22px;
+  height:22px;
+  min-width:22px;
+  min-height:22px;
+  stroke-width:2.2;
   opacity:.96;
 }
 .glow-link:hover{
