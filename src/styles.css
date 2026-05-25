@@ -80,7 +80,7 @@ div{
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:8px;
+  padding:12px;
   overflow:visible;
   background-size:cover;
   background-position:center;
@@ -103,8 +103,14 @@ div{
   min-height:100dvh;
 }
 .page3{
-  padding-top:20px;
-  padding-bottom:20px;
+  background-size:contain !important;
+  background-position:center top !important;
+  background-repeat:repeat-y !important;
+  background-color:#fff6f3;
+}
+.page3 .stack-card{
+  position:relative;
+  z-index:2;
 }
 .hero-card,
 .invite-layout,
