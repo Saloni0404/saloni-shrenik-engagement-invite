@@ -180,7 +180,7 @@ h2{
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  min-height:100dvh;
+  min-height:auto;
 }
 
 .hero-title{
@@ -761,6 +761,20 @@ color:var(--gold);
   }
   .page-frame{
     inset:12px;
+  }
+  .hero-card,
+  .page3-inner,
+  .invite-layout{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 !important;
+    padding-left:16px;
+    padding-right:16px;
+    box-sizing:border-box;
+  }
+  .stack-card{
+    width:100%;
+    border-radius:0;
   }
 }
 @media (min-width:1600px){
