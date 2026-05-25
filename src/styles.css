@@ -101,7 +101,7 @@ div{
 
 .hero-card,
 .invite-layout,
-.page3-inner{
+{
   position:relative;
   z-index:1;
   width:min(1120px,100%);
@@ -109,6 +109,18 @@ div{
   margin:0 auto;
   padding:20px 16px;
   padding-top:60px;
+}
+.page3-inner{
+  width:calc(100% - 28px);
+  max-width:calc(100% - 28px);
+  margin:0 auto;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+  padding-top:40px;
+  box-sizing:border-box;
 }
 
 /* ======================================================
@@ -715,7 +727,6 @@ h2{
     display:none;
   }
   .hero-card,
-  .page3-inner,
   .invite-layout{
     width:100% !important;
     max-width:100% !important;
@@ -724,9 +735,9 @@ h2{
     padding-right:16px;
     box-sizing:border-box;
   }
-  .stack-card{
-  width:calc(100% - 24px);
-  max-width:calc(100% - 24px);
+.stack-card{
+  width:100%;
+  max-width:100%;
   margin:0 auto;
   border-radius:18px;
 }
