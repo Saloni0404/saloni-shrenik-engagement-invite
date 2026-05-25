@@ -101,6 +101,8 @@ div{
 .page1,
 .page2{
   min-height:100dvh;
+  padding-bottom:24px;
+  background-position:center top;
 }
 .page3{
   background-size:contain !important;
