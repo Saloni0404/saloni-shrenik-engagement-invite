@@ -216,7 +216,7 @@ h2{
   /*bottom:5%;*/
   bottom:15dvh;
   top:auto;
-  left:30%;
+  left:45%;
   transform:translateX(-50%);
   color:var(--maroon);
   font-family:'Cormorant Garamond',serif;
@@ -755,14 +755,14 @@ color:var(--gold);
     padding:0;
   }
   .page{
-    width:calc(100vw - 2px) !important;
-    max-width:calc(100vw - 2px) !important;
+    width:100vw !important;
+    max-width:100vw!important;
     margin:0 auto !important;
     border-radius:0;
     box-shadow:none;
   }
   .page-frame{
-    inset:12px;
+    inset:8px;
   }
   .hero-card,
   .page3-inner,
