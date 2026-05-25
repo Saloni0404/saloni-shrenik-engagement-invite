@@ -196,7 +196,7 @@ h2{
 .scroll-note{
 
   position:absolute;
-  top:88svh;
+  top:84svh;
   left:40%;
   transform:translateX(-50%);
   color:var(--maroon);
