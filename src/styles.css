@@ -87,7 +87,7 @@ div{
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-  border:1.5px solid rgba(201,154,55,.62);
+  border:3px solid rgba(201,154,55,.62);
   border-radius:0;
   box-shadow:none;
 }
@@ -209,7 +209,7 @@ h2{
 .scroll-note{
   position:auto;
   /*bottom:5%;*/
-  bottom:15dvh;
+  bottom:10dvh;
   top:auto;
   left:45%;
   transform:translateX(-50%);
@@ -754,7 +754,7 @@ color:var(--gold);
     box-shadow:none;
   }
   .page-frame{
-    inset:8px;
+    display:none;
   }
   .hero-card,
   .page3-inner,
