@@ -381,7 +381,7 @@ const toggleMusic = () => {
         </button>      
 </form>
     
-      </section>
+      {/*</section>
       <section className="stack-card map-card">
         <MapPin className="section-icon"/>
         <h3>Getting There</h3>
@@ -395,7 +395,7 @@ const toggleMusic = () => {
         >
           View on Map ↗
         </a>
-      </section>
+      </section>*/}
 
       <section className="stack-card contacts">
         <Phone className="section-icon"/>
