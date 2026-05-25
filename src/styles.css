@@ -75,7 +75,7 @@ div{
   z-index:5;
 }
 .page{
-  min-height:100dvh;
+   min-height:calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   width:100%;
   max-width:100%;
   padding-top:env(safe-area-inset-top);
@@ -439,8 +439,8 @@ color:var(--gold);
   margin:10px 0 0;
 }
 .stack-card{
-  width:calc(100% - 34px);
-  max-width:calc(100% - 34px);
+  width:calc(100% - 40px);
+  max-width:calc(100% - 40px);
   background:rgba(255,255,255,.52);
   border:
     1px solid rgba(201,154,55,.35);
