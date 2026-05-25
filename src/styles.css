@@ -1,3 +1,5 @@
+Style.css
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap');
 
 /* ======================================================
@@ -101,8 +103,6 @@ div{
 .page1,
 .page2{
   min-height:100dvh;
-  padding-bottom:24px;
-  background-position:center top;
 }
 .page3{
   background-size:contain !important;
@@ -115,16 +115,15 @@ div{
   z-index:2;
 }
 .hero-card,
-.invite-layout{
-  display:flex;
-  flex-direction:column;
-  width:calc(100% - 32px);
-  max-width:calc(100% - 32px);
+.invite-layout
+{
+  position:relative;
+  z-index:1;
+  width:min(1120px,100%);
+  max-width:100%;
   margin:0 auto;
-  box-sizing:border-box;
-  justify-content:space-between;
-  min-height:min(760px,90dvh);
-  gap:18px;
+  padding:20px 16px;
+  padding-top:60px;
 }
 .page3-inner{
   width:calc(100% - 28px);
@@ -182,17 +181,16 @@ h2{
    PAGE 1
 ====================================================== */
 .hero-card{
-  width:calc(100% - 32px);
-  max-width:calc(100% - 32px);
-  margin:0 auto;
-  min-height:100dvh;
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  padding:40px 16px;
-  box-sizing:border-box;
-  position:relative;
+  padding:0;
+  margin:0;
 }
 
 .hero-title{
@@ -227,7 +225,7 @@ h2{
   /*bottom:5%;*/
   bottom:2vh;
   top:auto;
-  left:50%;
+  left:30%;
   transform:translateX(-50%);
   color:var(--maroon);
   font-family:'Cormorant Garamond',serif;
@@ -529,7 +527,7 @@ h2{
 ====================================================== */
 .rsvp-card{
   min-height:min(760px,90dvh);
-  padding-top:25px;
+  padding-top:34px;
   padding-bottom:34px;
 }
 .rsvp-form{
@@ -767,7 +765,7 @@ h2{
   .page-frame{
     display:none;
   }
-
+.hero-card,
 .invite-layout{
   width:100% !important;
   max-width:100% !important;
@@ -831,4 +829,187 @@ h2{
     min-height:100dvh !important;
   }
 
+}
+/* ======================================================
+   FINAL PAGE SPACING + BORDER/CLIPPING FIX
+   Added to prevent page 1 bottom border clipping and let
+   page 3 grow to fit RSVP content while preserving artwork.
+====================================================== */
+
+main{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+  padding:14px 0 22px;
+}
+
+.page{
+  width:min(100vw, 430px) !important;
+  max-width:430px !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  overflow:visible !important;
+  border:none !important;
+  box-shadow:0 10px 30px rgba(92,33,37,.10);
+  background-color:#fff6f3;
+}
+
+/* Pages 1 and 2 are full artwork pages. Use aspect-ratio instead of
+   100dvh so cover/crop never cuts off the built-in gold border. */
+.page1,
+.page2{
+  min-height:auto !important;
+  aspect-ratio:941 / 1672;
+  background-size:100% 100% !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+
+/* Page 3 needs to expand to the RSVP content. Stretch the decorative
+   background to the actual content height so the frame remains continuous. */
+.page3{
+  min-height:auto !important;
+  height:auto !important;
+  padding:34px 0 38px !important;
+  background-size:100% 100% !important;
+  background-position:center top !important;
+  background-repeat:no-repeat !important;
+}
+
+.page3-inner{
+  width:82% !important;
+  max-width:360px !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  gap:8px !important;
+}
+
+.closing-title{
+  font-size:clamp(1.35rem, 5.4vw, 1.75rem) !important;
+  line-height:1.05 !important;
+  margin:0 !important;
+  padding:0 8px !important;
+}
+
+.page3 .divider{
+  margin:3px auto 5px !important;
+}
+
+.page3 .divider span{
+  width:74px !important;
+}
+
+.stack-card,
+.rsvp-card{
+  width:100% !important;
+  max-width:100% !important;
+  min-height:0 !important;
+  margin:0 auto !important;
+  padding:12px 14px 14px !important;
+  border-radius:18px !important;
+}
+
+.rsvp-card .section-icon{
+  width:18px !important;
+  height:18px !important;
+  min-width:18px !important;
+  min-height:18px !important;
+}
+
+.stack-card h3{
+  font-size:.92rem !important;
+  margin:2px 0 !important;
+}
+
+.stack-card p{
+  font-size:.78rem !important;
+  line-height:1.2 !important;
+  margin:2px 0 6px !important;
+}
+
+.rsvp-form{
+  gap:6px !important;
+  margin-top:6px !important;
+}
+
+.rsvp-form label{
+  font-size:.74rem !important;
+  line-height:1.05 !important;
+  margin-top:2px !important;
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea{
+  min-height:34px !important;
+  padding:7px 10px !important;
+  border-radius:10px !important;
+  font-size:14px !important;
+}
+
+.rsvp-form .pill{
+  align-self:center;
+  padding:10px 24px !important;
+  margin-top:5px !important;
+  font-size:.78rem !important;
+}
+
+.final-giftline{
+  font-size:clamp(1rem, 4.3vw, 1.35rem) !important;
+  line-height:1.05 !important;
+  margin:4px 0 0 !important;
+  padding:0 6px;
+}
+
+.final-line{
+  font-size:clamp(1.15rem, 4.8vw, 1.55rem) !important;
+  line-height:1.05 !important;
+  margin:0 !important;
+  padding:0 6px !important;
+}
+
+.scroll-note{
+  bottom:4.5% !important;
+}
+
+@media (max-width:768px){
+  html,
+  body,
+  main{
+    display:flex !important;
+  }
+
+  main{
+    gap:14px !important;
+    padding:10px 0 18px !important;
+  }
+
+  .page{
+    width:100vw !important;
+    max-width:430px !important;
+    margin:0 auto !important;
+  }
+
+  .page1,
+  .page2{
+    min-height:auto !important;
+    aspect-ratio:941 / 1672;
+  }
+
+  .page3{
+    min-height:auto !important;
+    padding-top:32px !important;
+    padding-bottom:36px !important;
+  }
+}
+
+@supports (-webkit-touch-callout: none){
+  main,
+  .page,
+  .page1,
+  .page2,
+  .page3{
+    min-height:auto !important;
+  }
 }
