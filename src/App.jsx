@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { CalendarDays, Clock, MapPin, Phone, Mail } from 'lucide-react';
+import { CalendarDays, Clock, MapPin, Phone, Mail,Youtube} from 'lucide-react';
 import { invite } from './inviteConfig';
 import './styles.css';
 import React, { useState, useRef, useEffect } from 'react';
@@ -263,17 +263,20 @@ const toggleMusic = () => {
         label={invite.dateLabel}
         href={invite.calendarLink}
       />
-
       <Detail
         icon={<Clock/>}
         label={invite.timeLabel}
         href={invite.calendarLink}
       />
-
       <Detail
         icon={<MapPin/>}
         label={invite.locationShort}
         href={invite.mapLink}
+      />
+      <Detail
+      icon={<Youtube/>}
+      label="Watch Live on YouTube"
+      href="https://youtube.com/"
       />
 
     </div>
@@ -314,7 +317,9 @@ const toggleMusic = () => {
         />
         <label>Attending</label>
          <select
-          value={form.attending}
+         className={
+            form.attending ? 'selected' : ''
+          }
           onChange={(e) => setForm({ ...form, attending: e.target.value })}
         >
           <option>Yes</option>

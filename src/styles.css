@@ -535,7 +535,18 @@ h2{
   font-size:16px;
   box-sizing:border-box;
 }
+.rsvp-form input::placeholder,
+.rsvp-form textarea::placeholder{
 
+  color:rgba(109,7,26,.45);
+  opacity:1;
+}
+.rsvp-form select{
+  color:rgba(109,7,26,.55);
+}
+.rsvp-form select.selected{
+  color:#6D071A;
+}
 .rsvp-form label{
   text-align:left;
   font-weight:600;
