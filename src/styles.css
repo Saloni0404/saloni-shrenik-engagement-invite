@@ -75,11 +75,11 @@ div{
   z-index:5;
 }
 .page{
-   min-height:calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+ 
   width:100%;
   max-width:100%;
-  padding-top:env(safe-area-inset-top);
-  padding-bottom:env(safe-area-inset-bottom);
+  padding-top:4px;
+  padding-bottom:4px;
   position:relative;
   display:flex;
   align-items:center;
@@ -116,6 +116,7 @@ div{
   max-width:100%;
   margin:0 auto;
   padding:20px 16px;
+  padding-top:60px;
 }
 
 /* ======================================================
@@ -328,13 +329,13 @@ h2{
 }
 .details-row{
   position:absolute;
-  bottom:3%;
+  bottom:-2%;
   left:50%;
   transform:translateX(-50%);
   display:flex;
   flex-direction:column;
   align-items:flex-start;
-  gap:10px;
+  gap:8px;
   width:min(92vw,340px);
   z-index:5;
 }
@@ -431,6 +432,7 @@ color:var(--gold);
   line-height:1.15;
   padding:0 12px;
    margin-top:-10px;
+   margin-bottom:16px;
 }
 .final-giftline{
   font-family:'Cormorant Garamond';
