@@ -300,7 +300,7 @@ const toggleMusic = () => {
         icon={<Phone className="mini-phone"/>}
         label="Shrenik - +1 (470) 398-7738" 
         href="tel:+14703987738"
-      >
+      />
     </div>
   
 
