@@ -326,7 +326,6 @@ const toggleMusic = () => {
   <Page n={3}>
     <div className="page3-inner fade-up">
       <h2 className="closing-title">{invite.message}</h2>
-      <div className="divider"><span></span>♥<span></span></div>
       <section className="stack-card rsvp-card">
         <Mail className="section-icon"/><h3>Kindly RSVP</h3>
         <p>Let us know if you can make it!</p>
