@@ -1040,7 +1040,7 @@ main{
  width: 14px;
  height: 14px;
  background: rgba(255, 192, 203, 0.75);
- border-radius: 0 80% 80% 80%;
+ border-radius: 0 50% 0% 50%;
  transform: rotate(45deg);
  animation: petals-fall 10s linear infinite;
  filter: blur(0.3px);
