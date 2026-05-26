@@ -10,7 +10,6 @@ function Detail({icon, label, href}){
   </a>
 }
 function Page({ n, children }) {
-
   return (
     <section
       className={`page page${n}`}
@@ -23,6 +22,27 @@ function Page({ n, children }) {
     </section>
   );
 }
+function FallingPetals() {
+  const petals = Array.from({ length: 18 });
+  return (
+    <div className="petal-overlay" aria-hidden="true">
+      {petals.map((_, index) => (
+        <span
+          key={index}
+          className="petal"
+          style={{
+            "--i": index,
+            "--delay": `${index * 0.9}s`,
+            "--duration": `${9 + (index % 6)}s`,
+            "--start-x": `${(index * 17) % 100}vw`,
+            "--size": `${10 + (index % 5) * 3}px`,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
+
 function App(){
   const [form, setForm] = useState({
     name: '',
