@@ -405,6 +405,7 @@ h2{
   display:block;
   margin:0 auto;
 }
+.contact-line,
 .page2-contacts{
   position:absolute;
 
@@ -428,6 +429,7 @@ h2{
   font-size:0.72rem;
   font-weight:600;
 }
+
 .mini-phone{
   width:18px;
   height:18px;
@@ -677,6 +679,7 @@ h2{
       /*1px solid rgba(201,154,55,.38);*/
     min-height:auto;
     align-items:flex-start;
+    color:#6D071A;
   }
   .detail:first-child{
     border-top:0;
