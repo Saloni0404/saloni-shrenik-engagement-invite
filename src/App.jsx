@@ -314,12 +314,12 @@ return (
       />
       <Detail
         icon={<Phone className="mini-phone"/>}
-        label="Saloni - +1 (412) 805-0867"
+        label="Saloni: +1 (412) 805-0867"
         href="tel:+14128050867"
       />
       <Detail
         icon={<Phone className="mini-phone"/>}
-        label="Shrenik - +1 (470) 398-7738" 
+        label="Shrenik: +1 (470) 398-7738"
         href="tel:+14703987738"
       />
     </div>
