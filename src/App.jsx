@@ -467,7 +467,7 @@ return (
     className="music-btn"
     onClick={toggleMusic}
   >
-    {playing ? '❚❚ Music' : '▶ Music'}
+    {playing ? '❚❚ ' : '▶'}
    </button>
 
 </main>
