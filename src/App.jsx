@@ -175,10 +175,21 @@ const toggleMusic = () => {
 return (
   <>
     <FallingPetals />
-    <main>
-
+     <main className={!opened ? "invite-locked" : ""}>
 
 <Page n={1}>
+  {!opened && (
+ <div
+   className="invite-overlay"
+   onClick={openInvitation}
+ >
+   <div className="overlay-content">
+     <h2>
+       Tap to Open Invitation
+     </h2>
+   </div>
+ </div>
+)}
   <div className="hero-card fade-up">
   
     {/*

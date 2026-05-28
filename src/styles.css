@@ -1078,3 +1078,86 @@ main{
    opacity: 0;
  }
 }
+
+.invite-overlay {
+ position: absolute;
+ inset: 0;
+ z-index: 5000;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background:
+   linear-gradient(
+     rgba(20, 10, 16, 0.55),
+     rgba(40, 10, 20, 0.72)
+   );
+ backdrop-filter: blur(4px);
+ -webkit-backdrop-filter: blur(4px);
+ animation: overlayFadeIn 0.6s ease;
+}
+.overlay-content {
+  text-align: center;
+  color: #d8b15f;
+  width: 230px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #5b1020;
+  border: 3px double #d8b15f;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 8px rgba(216, 177, 95, 0.16),
+    0 12px 35px rgba(0, 0, 0, 0.35);
+
+  transform: rotate(-8deg);
+  cursor: pointer;
+}
+
+.overlay-content::before {
+  content: "";
+  position: absolute;
+  inset: 13px;
+  border: 1px dashed rgba(216, 177, 95, 0.75);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.overlay-content h2,
+.overlay-small,
+.overlay-note {
+  color: #d8b15f;
+}
+
+.overlay-content h2 {
+font-family: 'Great Vibes', serif;
+ margin: 10px 0;
+ font-size: 1.5rem;
+ font-weight: 700;
+ letter-spacing: 0.5px;
+}
+.overlay-small {
+ font-size: 0.85rem;
+ opacity: 0.8;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+}
+.overlay-note {
+ margin-top: 10px;
+ font-size: 0.82rem;
+ opacity: 0.72;
+}
+@keyframes overlayFadeIn {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
+.invite-locked {
+ height: 100vh;
+ height: 100dvh;
+ overflow: hidden;
+}
